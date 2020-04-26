@@ -13,6 +13,7 @@ div.container {width: 600px; margin: 50px auto;}
 table {border-collapse: collapse; width: 100%;}
 thead th {background-color: #eee;}
 th, td {padding: 4px; border: 1px solid lightgray;}
+td:nth-child(4) {text-align: center;}
 </style>
 </head>
 <body>
