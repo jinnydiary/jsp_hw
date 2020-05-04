@@ -4,7 +4,7 @@
 String name = "";
 String gender = null;
 String errmsg = null;
-request.getParameter("utf-8");
+request.setCharacterEncoding("utf-8");
 if (request.getMethod().equals("POST")) {
 	name = request.getParameter("name");
 	gender = request.getParameter("gender");
@@ -21,38 +21,27 @@ if (request.getMethod().equals("POST")) {
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-table {
-	border-collapse: collapse;
-	width: 300px;
-}
-
-td {
-	border: 1px solid gray;
-}
-
-div {
-	margin-bottom: 10px;
-}
-
-div.err {
-	margin: 10px;
-	padding: 10px 20px;
-	background-color: #fdd;
-	border: 1px solid #faa;
-}
+table { border-collapse: collapse; width: 300px; }
+td { padding: 2px; border: 1px solid gray; }
+div { margin-bottom: 20px;}
+div.container {margin-bottom: 50px;}
+input.text {padding: 5px; width: 200px;}
+div.err { margin: 10px;	padding: 10px 20px; background-color: #fdd; border: 1px solid #faa; }
+button {padding: 5px; width: 100px;}
 </style>
 </head>
 <body>
-	<div>
+	<div class="container">
 		<form method="post">
 			<h1>회원 등록</h1>
 			<div>
-				<label>이름</label><br> <input type="text" name="name" value="<%=name%>">
+				<label>이름</label><br>
+				<input type="text" class="text" name="name" value="<%=name%>">
 			</div>
 			<div>
 				<label>성별</label><br>
-				<input type="radio" name="gender" value="남자">남자<br>
-				<input type="radio" name="gender" value="여자">여자
+				<input type="radio" name="gender" value="남자" <%=("남자".equals(gender)) ? "checked" : "" %>>남자<br>
+				<input type="radio" name="gender" value="여자" <%=("여자".equals(gender)) ? "checked" : "" %>>여자
 			</div>
 			<button type="submit">회원 등록</button>
 		</form>
