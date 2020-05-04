@@ -21,10 +21,10 @@ if (request.getMethod().equals("POST")) {
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-table { border-collapse: collapse; width: 300px; }
-td { padding: 2px; border: 1px solid gray; }
+table { border-collapse: collapse; width: 400px; }
+td { padding: 3px; border: 1px solid gray; }
 div { margin-bottom: 20px;}
-div.container {margin-bottom: 50px;}
+div.container {margin-bottom: 40px;}
 input.text {padding: 5px; width: 200px;}
 div.err { margin: 10px;	padding: 10px 20px; background-color: #fdd; border: 1px solid #faa; }
 button {padding: 5px; width: 100px;}

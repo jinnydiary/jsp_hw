@@ -11,6 +11,12 @@ if(number == null) {
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+div {margin-bottom: 10px;}
+input.text {padding: 5px;}
+select.sel {padding: 5px;}
+button {width: 80px; padding: 5px;}
+</style>
 </head>
 <body>
 	<form>
@@ -20,10 +26,10 @@ if(number == null) {
 			<input type="radio" name="number" value="three" <%=("three".equals(number)) ? "checked" : ""%>>three
 		</div>
 		<div>
-			<select>
-			<option value="one" <%=("one".equals(number)) ? "checked" : "" %>>one</option>
-			<option value="two" <%=("two".equals(number)) ? "checked" : "" %>>two</option>
-			<option value="three" <%=("three".equals(number)) ? "checked" : "" %>>three</option>
+			<select class="sel">
+			<option value="one" <%=("one".equals(number)) ? "selected" : "" %>>one</option>
+			<option value="two" <%=("two".equals(number)) ? "selected" : "" %>>two</option>
+			<option value="three" <%=("three".equals(number)) ? "selected" : "" %>>three</option>
 			</select>
 		</div>
 		<button type="submit">Ok</button>
