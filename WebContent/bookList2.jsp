@@ -13,10 +13,11 @@ List<Book> list = BookDAO.findByAuthor(author); %>
 <style>
 div.container {width: 600px; margin: 50px auto;}
 table {border-collapse: collapse; width: 600px; margin-top: 10px;}
+input {padding: 5px; margin-right: 5px;}
 th, td {border: 1px solid gray; padding: 4px;}
 th {background-color: lightgray;}
 td:nth-child(4) {text-align: center;}
-button {width: 50px;}
+button {width: 75px; padding: 5px;}
 </style>
 </head>
 <body>
