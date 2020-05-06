@@ -7,9 +7,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+div.container {width: 600px; margin: 50px auto;}
+table {border-collapse: collapse; width: 600px;}
+th, td {border: 1px solid gray; padding: 4px;}
+th {background-color: lightgray;}
+td:nth-child(4) {text-align: center;}
+</style>
 </head>
 <body>
 	<div class="container">
+	<h1>책목록</h1>
 		<table>
 			<thead>
 				<tr>
