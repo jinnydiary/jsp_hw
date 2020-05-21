@@ -80,12 +80,12 @@ public class ProfessorDAO {
 	}
 
 	public static void update(Professor professor) throws Exception {
-		String sql = "UPDATE professor SET id=?, professorName=?, departmentId=?";
+		String sql = "UPDATE professor SET professorName=?, departmentId=? WHERE id=?";
 		try(Connection connection = DB.getConnection("student1");
 			PreparedStatement pstmt = connection.prepareStatement(sql)) {
-			pstmt.setInt(1, professor.getId());
-			pstmt.setString(2, professor.getProfessorName());
-			pstmt.setInt(3, professor.getDepartmentId());
+			pstmt.setString(1, professor.getProfessorName());
+			pstmt.setInt(2, professor.getDepartmentId());
+			pstmt.setInt(3, professor.getId());
 			pstmt.executeUpdate();
 		}
 	}
