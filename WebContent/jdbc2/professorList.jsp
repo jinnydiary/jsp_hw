@@ -7,7 +7,7 @@ List<Professor> list = ProfessorDAO.findAll();
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="/lecture1/res/common.css">
+<link rel="stylesheet" href="/jsp_hw/res/common.css">
 <style>
   div.container { width: 600px; }
   h1 { margin-bottom: -20px; }
